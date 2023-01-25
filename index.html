@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>People entered:</h1>
+        <h2 id="count-el">0</h2>
+        <button id="increment-btn" onclick="increment()">Increment</button>
+        <button id="save-btn" onclick="save()">Save</button>
+        <script>
+            let countEl = document.getElementById("count-el")
+let count = 0
+
+function increment() {
+    count = count + 1
+    countEl.innerText = count
+}
+function save(){
+    console.log(count)
+}
+
+        </script>
+    </body>
+</html>
